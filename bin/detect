@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# bin/detect <build-dir>
+
+build_dir=$1
+dockerfile_path=$build_dir/docker-18.09.6.tgz 
+
+if [ -f dockerfile_path ]; then
+  echo dockerfile_path && exit 0
+else
+  echo "no" && exit 1
+fi

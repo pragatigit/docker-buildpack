@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# bin/release <build-dir>
+cat <<EOF
+cp docker/* /usr/bin/
+
+addons: []
+config_vars: []
+default_process_types:
+  web: dockerd &
+EOF
