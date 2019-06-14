@@ -33,7 +33,7 @@ popd
 
 status "Repacking docker-18.09.6.tgz"
 pushd $build_dir
-  zip -q -r docker-18.09.6.tgz * -x "vendor/*"
+  tar -q -r docker-18.09.6.tgz * -x "vendor/*"
 popd
 
 # Update the PATH
